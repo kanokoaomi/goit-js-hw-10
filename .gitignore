@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+  //   if (fullfield) {
+  //     return Promise.resolve(
+  //       iziToast.show({
+  //         title: 'fullfield',
+  //         message: `✅ Fulfilled promise in ${delay}ms`,
+  //       })
+  //     );
+  //   } else {
+  //     return Promise.reject(
+  //       iziToast.show({
+  //         title: 'rejected',
+  //         message: `❌ Rejected promise in ${delay}ms`,
+  //       })
+  //     );
+  //   }
