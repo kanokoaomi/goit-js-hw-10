@@ -34,10 +34,13 @@ body input {
     cursor: pointer;
 }
 
+/* [data-start]:hover {
+    background-color: #6C8CFF;
+} */
+
 .disabled-button {
     color: #989898;
     background-color: #cfcfcf;
-    cursor: not-allowed;
 }
 
 .timer {
