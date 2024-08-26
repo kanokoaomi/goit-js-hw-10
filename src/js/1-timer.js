@@ -5,6 +5,8 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 const btn = document.querySelector('button[data-start]');
+btn.disabled = true;
+btn.classList.add('disabled-button');
 
 const input = document.querySelector('input#datetime-picker');
 
@@ -24,6 +26,7 @@ const options = {
       btn.classList.add('disabled-button');
     } else {
       btn.classList.remove('disabled-button');
+      btn.disabled = false;
     }
   },
 };
@@ -62,15 +65,12 @@ const timerStartListener = () => {
     let countedTime = userSelectedDate - new Date();
 
     input.disabled = true;
-    btn.disabled = true;
     btn.classList.add('disabled-button');
 
     if (countedTime <= 0) {
       clearInterval(intervalId);
       isActive = false;
-      btn.classList.remove('disabled-button');
       countedTime = 0;
-      btn.disabled = false;
       input.disabled = false;
     }
 
